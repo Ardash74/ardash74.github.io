@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Заголовок -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ардаш">
+    <meta name="keywords" content="Ключевые слова сайта">
+    <link href="tile.png" rel="shortcut icon">
+    <link rel="apple-touch-icon" href="tile.png">
+    <title>Личная страница</title>
+</head>
+<style>
+
+
+  main{
+    width: 100%;
+    max-width: 960px;
+    min-width: 430px;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+
+  p{}
+
+  .personal{
+    margin: 0;
+    padding: 0 15px;
+    background: #ffffff;
+    min-height: 100%;
+    display: flex;
+  }
+
+
+  .personal_img img{
+    max-width: 300px;
+    margin-top:5%;
+  }
+
+  .personal_inf{padding: 0 20px;}
+
+  .personal_inf .name{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .table{padding: 0 0 40px 0;}
+
+  .table table{
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: auto;
+  }
+
+  .table table td,th,tr{border: 1px solid black;}
+
+  .table table td:first-child {width: 30%;}
+
+  .input_inf{
+    display: flex;
+    flex-direction: row;
+  }
+
+  form{margin: auto;}
+
+  input{width: 300px;}
+
+  label{margin-right: 5px;}
+
+  form input:nth-child(2){margin-right: 10px;}
+
+  @media screen and (max-width: 600px) {
+    table{width: 100%;}
+    .personal{
+      display: flex;
+      flex-direction: column;
+    }
+    form input {width: 150px;}
+  }
+
+  details{padding: 20px;}
+
+  details summary::-webkit-details-marker {display:none;}
+
+  details summary{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: crimson;
+  }
+
+  details summary:hover {color: darkslategrey;}
+
+  details summary:focus {color: darkgreen;}
+
+
+</style>
+<!--Коммент -->
+<body>
+
+
+  <header class="header"></header>
+
+  <main class="main">
+    <section class="personal">
+      <div class="personal_img">
+        <img src="img/Photo.png">
+      </div>
+      <div class="personal_inf">
+        <p class="name">Валерия Ардашова</p>
+        <p><b>Адрес:</b> Ленина, 76</p>
+        <p><b>Возраст:</b> 24</p>
+        <p><b>Опыт работы:</b> Контент-менеджер - 2 года</p>
+        <p><b>Телефон:</b> 8-888-888-88-88</p>
+      </div>
+    </section>
+
+    <h2>Знание языков:</h2>
+    <section class="table">
+
+      <table>
+        <tbody>
+        <tr>
+          <th></th>
+          <th>С++</th>
+          <th>Java</th>
+          <th>Python</th>
+          <th>С#</th>
+          <th>JavaScript</th>
+        </tr>
+        <tr>
+          <td>Отличное владение</td>
+          <td>Нет</td>
+          <td>Нет</td>
+          <td>Нет</td>
+          <td>Нет</td>
+          <td>Нет</td>
+        </tr>
+        <tr>
+          <td>Хорошее владение</td>
+          <td>Нет</td>
+          <td>Нет</td>
+          <td>Нет</td>
+          <td>Нет</td>
+          <td>Нет</td>
+        </tr>
+        <tr>
+          <td>Среднее владение</td>
+          <td>Нет</td>
+          <td>Нет</td>
+          <td>Да</td>
+          <td>Да</td>
+          <td>Да</td>
+        </tr>
+        <tr>
+          <td>Плохое владение</td>
+          <td>Да</td>
+          <td>Да</td>
+          <td>Да</td>
+          <td>Да</td>
+          <td>Да</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+    <section class="input_inf">
+      <form>
+          <label for="phone">Телефон:</label><input type="tel" id="phone" placeholder="Введите ваш номер телефона">
+          <label for="name">Имя:</label><input type="text" id="name"  placeholder="Введите ваше имя">
+      </form>
+    </section>
+
+    <section>
+     <details>
+        <summary>Подробнее</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda at consectetur corporis cumque delectus, earum eligendi enim, laboriosam perferendis qui quisquam saepe sunt ut vel. Cum eligendi eveniet laudantium.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <footer class="footer"></footer>
+
+</body>
+</html>
